@@ -43,15 +43,6 @@ React, React Router, Firebase Auth, Tailwind CSS, React Toastify, Framer Motion
 Backend:
 Node.js, Express, MongoDB
 
-<h1>Folder Structure</h1> 
-src/
- ├── components/
- ├── pages/
- ├── layouts/
- ├── context/
- ├── routes/
- └── firebase/
-
 
 <h1>Authentication</h1> 
 
