@@ -4,7 +4,6 @@ A simple social development event platform where users can browse upcoming event
 
 <h1>Live Links</h1> 
 
-(Add your real links here)
 
 Live Website: https://social-event-jahid.netlify.app/
 
