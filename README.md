@@ -1,8 +1,8 @@
-🌱 SocialServe
+<h1> SocialServe </h1>
 
 A simple social development event platform where users can browse upcoming events, create events, manage events, join events, and update their profile.
 
-🔗 Live Links
+<h1>Live Links</h1> 
 
 (Add your real links here)
 
@@ -14,7 +14,7 @@ Server Repo: https://github.com/jahid-hasan-sajeeb/Social-Event-Backend
 
 Live Server: https://a-10-back.vercel.app/
 
-⭐ Features
+<h1>Features</h1>
 
 User Registration, Login, Logout
 
@@ -44,7 +44,7 @@ React, React Router, Firebase Auth, Tailwind CSS, React Toastify, Framer Motion
 Backend:
 Node.js, Express, MongoDB
 
-📦 Folder Structure (Simple)
+<h1>Folder Structure</h1> 
 src/
  ├── components/
  ├── pages/
@@ -54,7 +54,7 @@ src/
  └── firebase/
 
 
-🔐 Authentication
+<h1>Authentication</h1> 
 
 Email/Password login
 
@@ -64,7 +64,7 @@ Secure registration (password validation)
 
 Reset password via email
 
-📄 Pages
+<h1>Pages</h1>
 
 Home
 
