@@ -11,7 +11,6 @@ const Navbar = () => {
   return (
     <nav className="bg-black text-gray-300 py-4 px-6 md:px-28 shadow-md">
       <div className="flex justify-between items-center">
-        
         <h1 className="text-2xl md:text-3xl font-extrabold text-white tracking-wide">
           One<span className="text-green-500">Society</span>
         </h1>
@@ -31,20 +30,26 @@ const Navbar = () => {
             <li>
               <MyLink to="About-Us">About Us</MyLink>
             </li>
-            
+
           </ul>
 
-         
+
           <div className="flex items-center gap-4">
             {user ? (
-              <MyLink
-                to="/profile"
-                className="flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-800 hover:bg-zinc-700"
-              >
-                <span className="text-lg font-semibold">
-                  {user.displayName || "Profile"}
+              <div className="relative group flex items-center">
+                <MyLink to="/profile">
+                  <img
+                    src={user.photoURL}
+                    alt="Profile"
+                    className="w-10 h-10 rounded-full border-2 border-zinc-700 cursor-pointer"
+                  />
+                </MyLink>
+
+                <span
+                  className="absolute top-full left-1/2 -translate-x-1/2 mt-2 whitespace-nowrap px-2 py-1 bg-zinc-900 text-gray-200 text-sm rounded shadow-lg z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200">
+                  {user.displayName || "User"}
                 </span>
-              </MyLink>
+              </div>
             ) : (
               <MyLink
                 to="/login"
@@ -53,6 +58,7 @@ const Navbar = () => {
                 Login
               </MyLink>
             )}
+
           </div>
 
           <li>
@@ -111,9 +117,12 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-zinc-800 hover:bg-zinc-700"
               >
-                <span className="text-sm font-semibold">
-                  {user.displayName || "Profile"}
-                </span>
+                <img
+                  src={user.photoURL}
+                  alt="Profile"
+                  className="w-9 h-9 rounded-full border-2 border-zinc-700"
+                />
+
               </MyLink>
             ) : (
               <MyLink

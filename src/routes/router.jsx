@@ -58,9 +58,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "upcoming-events",
-                element: <UpcomingEvents></UpcomingEvents>,
-                loader: () => fetch('http://localhost:3000/events')
-
+                element: <UpcomingEvents></UpcomingEvents>
             },
             {
                 path: "articles",
