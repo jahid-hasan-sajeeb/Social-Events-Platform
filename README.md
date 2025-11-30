@@ -35,7 +35,7 @@ Dark theme UI
 
 Smooth animations
 
-🛠️ Tech Used
+<h1>Tech Used</h1>
 
 Frontend:
 React, React Router, Firebase Auth, Tailwind CSS, React Toastify, Framer Motion
