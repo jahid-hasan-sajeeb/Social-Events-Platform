@@ -92,7 +92,7 @@ const router = createBrowserRouter([
                 path: "events/:id",
                 element: <SingleEventDetails />,
                 loader: ({ params }) =>
-                    fetch(`http://localhost:3000/events/${params.id}`)
+                    fetch(`https://a-10-back.vercel.app/events/${params.id}`)
             },
         ]
     }

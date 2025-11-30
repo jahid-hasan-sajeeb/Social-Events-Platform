@@ -84,7 +84,7 @@ const CreateEvent = () => {
         };
 
         try {
-            const res = await fetch("http://localhost:3000/events", {
+            const res = await fetch("https://a-10-back.vercel.app/events", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload),

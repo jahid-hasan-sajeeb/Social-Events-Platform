@@ -31,7 +31,7 @@ const UpcomingEvents = () => {
       }
 
       const res = await fetch(
-        `http://localhost:3000/events?${params.toString()}`
+        `https://a-10-back.vercel.app/events?${params.toString()}`
       );
 
       if (!res.ok) {

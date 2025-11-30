@@ -14,7 +14,7 @@ const JoinedEvents = () => {
   useEffect(() => {
     const fetchJoined = async () => {
       try {
-        const res = await fetch("http://localhost:3000/events");
+        const res = await fetch("https://a-10-back.vercel.app/events");
         const data = await res.json();
 
         const mine = data.filter((event) =>

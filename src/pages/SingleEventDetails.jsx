@@ -44,7 +44,7 @@ const SingleEventDetails = () => {
     try {
       setJoining(true);
       const res = await fetch(
-        `http://localhost:3000/events/${event._id}/join`,
+        `https://a-10-back.vercel.app/events/${event._id}/join`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

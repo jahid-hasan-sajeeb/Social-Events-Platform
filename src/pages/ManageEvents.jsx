@@ -25,7 +25,7 @@ const ManageEvents = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const res = await fetch("http://localhost:3000/events");
+        const res = await fetch("https://a-10-back.vercel.app/events");
         const data = await res.json();
 
         const myEvents = data.filter(
@@ -52,7 +52,7 @@ const ManageEvents = () => {
     if (!ok) return;
 
     try {
-      const res = await fetch(`http://localhost:3000/events/${id}`, {
+      const res = await fetch(`https://a-10-back.vercel.app/events/${id}`, {
         method: "DELETE",
       });
 
@@ -104,7 +104,7 @@ const ManageEvents = () => {
       };
 
       const res = await fetch(
-        `http://localhost:3000/events/${editingEvent._id}`,
+        `https://a-10-back.vercel.app/events/${editingEvent._id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
